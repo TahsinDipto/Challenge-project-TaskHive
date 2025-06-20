@@ -1,8 +1,8 @@
 body{
-    background-image: url(../img/log-in.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    /* background-image: url(../img/log-in.jpg); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* background-position: center; */
 }
 input:focus{
     outline: none;
@@ -12,9 +12,4 @@ input[type="checkbox"] {
     opacity: .9;
     border-radius: 4px;
     color: white;
-}
-
-
-.bg{
-    background-color: #8de2ff;
 }
