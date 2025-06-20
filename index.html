@@ -7,35 +7,34 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>challenge</title>
 </head>
-<body>
+<body class="bg-[url(./img/log-in.jpg)] bg-cover bg-no-repeat bg-center">
     <section class="section-one-control bg-[#00000030]">
-        <div class="container h-[100vh] mx-auto flex flex-col justify-center items-center">
-            <form class="w-[366px]">
+        <div class="container md:h-[100vh] h-[100vh] sm:h-[auto] sm:py-[60px] mx-auto flex flex-col justify-center items-center">
+            <form class="sm:w-[366px] w-[86%]" id="form">
                 <div class="w-[100%] mb-[24px]">
                     <label class="text-white text-[28px] mb-[8px] font-semibold">User Name</label>
-                    <input class="w-[100%] bg-[#EFFBFF] border border-[#59BAFF] rounded-[8px] text-[14px] px-[12px] py-[6px] focus:ring-2 focus:ring-[#59BAFF]" placeholder="input user name" type="text">
+                    <input id="user" class="w-[100%] bg-[#EFFBFF] border border-[#59BAFF] rounded-[8px] text-[14px] px-[12px] py-[6px] focus:ring-2 focus:ring-[#59BAFF]" placeholder="input user name" type="text">
                 </div>
                 <div class="w-[100%] mb-[24px]">
                     <label class="text-white text-[28px] mb-[8px] font-semibold">Email</label>
-                    <input class="w-[100%] bg-[#EFFBFF] border border-[#59BAFF] rounded-[8px] text-[14px] px-[12px] py-[6px] focus:ring-2 focus:ring-[#59BAFF]" placeholder="input user mail" type="email">
+                    <input id="mail" class="w-[100%] bg-[#EFFBFF] border border-[#59BAFF] rounded-[8px] text-[14px] px-[12px] py-[6px] focus:ring-2 focus:ring-[#59BAFF]" placeholder="input user mail" type="email">
                 </div>
                 <div class="w-[100%] mb-[36px]">
                     <label class="text-white text-[28px] mb-[8px] font-semibold">Password</label>
-                    <input class="w-[100%] bg-[#EFFBFF] border border-[#59BAFF] rounded-[8px] text-[14px] px-[12px] py-[6px] focus:ring-2 focus:ring-[#59BAFF]" placeholder="input user password" type="password">
+                    <input id="password" class="w-[100%] bg-[#EFFBFF] border border-[#59BAFF] rounded-[8px] text-[14px] px-[12px] py-[6px] focus:ring-2 focus:ring-[#59BAFF]" placeholder="input user password" type="password">
                 </div>
-                <button class="w-[100%] text-center text-[18px] font-medium text-[#FF511C] bg-[#59BAFF] rounded-[8px] py-[4px] cursor-pointer capitalize mb-[22px]">
-                    sign in
-                </button>
-                <div class="flex items-center gap-[12px]">
+                <button id="logIn" type="submit" class="w-[100%] text-center text-[18px] font-medium text-[#FF511C] bg-[#59BAFF] rounded-[8px] py-[4px] cursor-pointer capitalize mb-[22px]">sign in</button>
+                <div class="flex items-center gap-[12px] mb-[-24px]">
                     <input type="checkbox" class="checked-control text-white w-[18px] h-[18px]">
                     <label class="text-white text-[14px]">Remember Me</label>
                 </div>
-                <p class="text-[48px] text-white tracking-[10px] my-[18px] font-semibold">-----or-----</p>
+                <p class="sm:text-[48px] text-[38px] text-center text-white sm:tracking-[10px] tracking-[4px] my-[18px] font-semibold">-----or-----</p>
                 <div>
                     <button class="w-[100%] p-[8px] cursor-pointer text-center rounded-[42px] bg-[#a6e8ff] hover:bg-[#8de2ff] relative"><img src="./img/Google.webp" alt="google" class="h-[100%] top-[0] left-[0] absolute"> Sign in with google</button>
                 </div>
             </form>
         </div>
     </section>
+    <script src="./js/logIn.js"></script>
 </body>
 </html>
